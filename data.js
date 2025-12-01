@@ -102,6 +102,17 @@ const DATA = {
             name: "Movies",
             items: [
                 {
+                    title: "Frankenstein",
+                    version: "2160p.NF.WEB-DL.HDR.MULTi.DDP5.1.Atmos.H265-BEN.THE.MEN ",
+                    size: "9.42GB",
+                    seeders: 330,
+                    leechers: 139,
+                    magnets: [
+                        "magnet:?xt=urn:btih:518eb6e54fbd7bc2ebc022697ea6e056482602ff&dn=Frankenstein.2025.2160p.NF.WEB-DL.HDR.MULTi.DDP5.1.Atmos.H265-BEN.THE.MEN&xl=38943218627&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.demonoid.ch%3A6969%2Fannounce&tr=udp%3A%2F%2Fpublic.demonoid.ch%3A6969%2Fannounce"
+                    ],
+                    torrents: null
+                },
+                {
                     title: "Tron: Ares (2025)",
                     version: "Waiting till Jan 9 for HDR",
                     size: null,
@@ -116,3 +127,5 @@ const DATA = {
 };
 
 window.DATA = DATA;
+
+// Date changed Dec 1 10:44pm
