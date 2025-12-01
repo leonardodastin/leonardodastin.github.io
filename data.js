@@ -13,6 +13,17 @@ const DATA = {
             name: "Games",
             items: [
                 {
+                    title: "CONTROL: Ultimate Edition",
+                    version: "v1.30 (517.915) + All DLCs",
+                    size: "18.1 GB",
+                    seeders: 104,
+                    leechers: 72,
+                    magnets: [
+                        "magnet:?xt=urn:btih:9029C9E27A818EB5D3095F6F3FEE287CFED4F3E3&dn=CONTROL%3A+Ultimate+Edition+%28v1.30%2F517.915+%2B+All+DLCs%2C+MULTi13%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+18.1+GB%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ccp.ovh%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=https%3A%2F%2Ftracker.tamersunion.org%3A443%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=udp%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filemail.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker1.bt.moack.co.kr%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce"
+                    ],
+                    torrents: null
+                },
+                {
                     title: "GRID: Ultimate Edition",
                     version: "v1.0.118.9362 + 8 DLCs",
                     size: "37.1 GB",
@@ -128,4 +139,4 @@ const DATA = {
 
 window.DATA = DATA;
 
-// Date changed Dec 1 10:44pm
+// Date changed Dec 1 11:32pm
