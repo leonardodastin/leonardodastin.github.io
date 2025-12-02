@@ -37,46 +37,16 @@ const DATA = {
             ]
         },
         {
-            name: "Stranger Things 39.34GB",
+            name: "Stranger Things",
             items: [
                 {
                     id: "st-1",
-                    title: "S05E01",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV H 265-FLUX",
-                    size: "9.82 GB",
-                    seeders: 92,
-                    leechers: 164,
-                    magnets: [String.raw``],
-                    torrents: null
-                },
-                {
-                    id: "st-2",
-                    title: "S05E02",
-                    version: "2160p NF WEB-DL DDP5 1 DV H 265-NTb",
-                    size: "7.98GB",
-                    seeders: 153,
-                    leechers: 119,
-                    magnets: [String.raw``],
-                    torrents: null
-                },
-                {
-                    id: "st-3",
-                    title: "S05E03",
-                    version: "2160p NF WEB-DL DDP5 1 DV H 265-NTb",
-                    size: "9.42GB",
-                    seeders: 330,
-                    leechers: 139,
-                    magnets: [String.raw``],
-                    torrents: null
-                },
-                {
-                    id: "st-4",
-                    title: "S05E04",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-FLUX",
-                    size: "12.12GB",
-                    seeders: 156,
-                    leechers: 97,
-                    magnets: [String.raw``],
+                    title: "S05",
+                    version: "Parte.01.ITA.ENG.2160p.NF.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-MeM.GP",
+                    size: "40.2 GB",
+                    seeders: 362,
+                    leechers: 447,
+                    magnets: [String.raw`magnet:?xt=urn:btih:74A22624C3F2925B8BAE27F1140FE69B96D98E68&dn=Stranger.Things.S05.Parte.01.ITA.ENG.2160p.NF.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-MeM.GP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=http%3A%2F%2Fbt.okmp3.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=http%3A%2F%2Ftracker.mywaifu.best%3A6969%2Fannounce&tr=udp%3A%2F%2Fd40969.acod.regrucolo.ru%3A6969%2Fannounce&tr=udp%3A%2F%2Fttk2.nbaonlineservice.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.privateseedbox.xyz%3A2710%2Fannounce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=udp%3A%2F%2Fmartin-gebhardt.eu%3A25%2Fannounce&tr=http%3A%2F%2Ftracker.renfei.net%3A8080%2Fannounce&tr=https%3A%2F%2Ftracker.expli.top%3A443%2Fannounce&tr=https%3A%2F%2Ftr.nyacat.pw%3A443%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 }
             ]
@@ -91,7 +61,7 @@ const DATA = {
                     size: "9.42GB",
                     seeders: 330,
                     leechers: 139,
-                    magnets: [String.raw``],
+                    magnets: [String.raw`magnet:?xt=urn:btih:B05657AB241DE081EB00A61E49A1DB0B6EB3CBB5&dn=Frankenstein.2025.2160p.Hybrid.MULTI.WEB-DL.DV.HDR.H265-AOC&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.birkenwald.de%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce`],
                     torrents: null
                 },
                 {
@@ -118,4 +88,4 @@ window.downloadedData = downloadedData;
 window.expandedCategory = expandedCategory;
 window.showDownloaded = showDownloaded;
 
-// Date changed Dec 2 10:18pm
+// Date changed Dec 2 11:05 PM
