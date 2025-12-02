@@ -5,23 +5,13 @@ const DATA = {
             name: "Games",
             items: [
                 {
-                    id: "game-1",
-                    title: "CONTROL: Ultimate Edition",
-                    version: "v1.30 (517.915) + All DLCs",
-                    size: "18.1 GB",
-                    seeders: 104,
-                    leechers: 72,
-                    magnets: ["magnet:?xt=urn:btih:9029C9E27A818EB5D3095F6F3FEE287CFED4F3E3&dn=CONTROL%3A+Ultimate+Edition"],
-                    torrents: null
-                },
-                {
                     id: "game-2",
                     title: "GRID: Ultimate Edition",
                     version: "v1.0.118.9362 + 8 DLCs",
                     size: "37.1 GB",
                     seeders: 10,
                     leechers: 9,
-                    magnets: ["magnet:?xt=urn:btih:7A2C461163B86AA9E79D8E406FB24FB721841E02&dn=GRID"],
+                    magnets: [String.raw`magnet:?xt=urn:btih:7A2C461163B86AA9E79D8E406FB24FB721841E02&dn=GRID%3A+Ultimate+Edition+%28v1.0.118.9362+%2B+8+DLCs%2C+MULTi7%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+37.1+GB%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.piratepublic.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 },
                 {
@@ -128,4 +118,4 @@ window.downloadedData = downloadedData;
 window.expandedCategory = expandedCategory;
 window.showDownloaded = showDownloaded;
 
-// Date changed Dec 1 11:32pm
+// Date changed Dec 2 10:18pm
