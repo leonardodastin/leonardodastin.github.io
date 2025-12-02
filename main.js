@@ -1,319 +1,196 @@
-
+// main.js
 'use strict';
 
-// ==========================================
-// 🌓 THEME MANAGEMENT
-// ==========================================
-
+// Theme management
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
 }
 
 function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    const current = document.documentElement.getAttribute('data-theme');
+    const newTheme = current === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
 }
 
 function updateThemeIcon(theme) {
-    const toggle = document.getElementById('themeToggle');
-    if (toggle) {
-        toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-    }
+    const btn = document.getElementById('themeToggle');
+    btn.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-// ==========================================
-// 🚀 APP LOGIC
-// ==========================================
-
-let toastTimeout = null;
-
+// Toast
 function showToast(message) {
-    try {
-        const toast = document.getElementById('toast');
-        if (!toast) return;
-
-        if (toastTimeout) {
-            clearTimeout(toastTimeout);
-        }
-
-        toast.textContent = String(message || 'Action completed');
-        toast.classList.add('show');
-        
-        toastTimeout = setTimeout(() => {
-            toast.classList.remove('show');
-            toastTimeout = null;
-        }, 2000);
-    } catch (error) {
-        console.error('Toast error:', error);
-    }
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2000);
 }
 
-function copyToClipboard(text, button) {
-    if (!text || typeof text !== 'string') {
-        showToast('Invalid link');
-        return;
-    }
-
-    if (!button) {
-        showToast('Button reference lost');
-        return;
-    }
-
-    if (button.disabled) return;
-    button.disabled = true;
-
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text)
-            .then(() => {
-                handleCopySuccess(button);
-            })
-            .catch((err) => {
-                console.warn('Clipboard API failed, trying fallback:', err);
-                fallbackCopy(text, button);
-            });
-    } else {
-        fallbackCopy(text, button);
-    }
-}
-
-function handleCopySuccess(button) {
-    try {
-        const originalText = button.innerHTML;
-        button.innerHTML = '✓';
-        button.classList.add('copied');
+// Copy to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
         showToast('Copied to clipboard!');
-        
-        setTimeout(() => {
-            if (button) {
-                button.innerHTML = originalText;
-                button.classList.remove('copied');
-                button.disabled = false;
-            }
-        }, 1500);
-    } catch (error) {
-        console.error('Copy success handler error:', error);
-        button.disabled = false;
-    }
-}
-
-function fallbackCopy(text, button) {
-    try {
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';
-        textArea.style.left = '-999999px';
-        textArea.style.top = '-999999px';
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        
-        try {
-            const successful = document.execCommand('copy');
-            if (successful) {
-                handleCopySuccess(button);
-            } else {
-                showToast('Copy failed');
-                button.disabled = false;
-            }
-        } catch (err) {
-            console.error('Fallback copy failed:', err);
-            showToast('Copy not supported');
-            button.disabled = false;
-        } finally {
-            document.body.removeChild(textArea);
-        }
-    } catch (error) {
-        console.error('Fallback copy error:', error);
-        showToast('Copy failed');
-        button.disabled = false;
-    }
-}
-
-function toggleCategory(categoryId) {
-    try {
-        const container = document.getElementById(`items-${categoryId}`);
-        const icon = document.getElementById(`icon-${categoryId}`);
-        
-        if (container && icon) {
-            container.classList.toggle('open');
-            icon.classList.toggle('rotated');
-        }
-    } catch (error) {
-        console.error('Toggle category error:', error);
-    }
-}
-
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-}
-
-function validateData(data) {
-    if (!data || typeof data !== 'object') {
-        return false;
-    }
-
-    if (!Array.isArray(data.categories)) {
-        return false;
-    }
-
-    return true;
-}
-
-function renderContent() {
-    try {
-        const contentDiv = document.getElementById('content');
-        if (!contentDiv) {
-            console.error('Content div not found');
-            return;
-        }
-
-        if (!validateData(DATA)) {
-            contentDiv.innerHTML = '<div class="error-message">Invalid data structure. Please check your configuration.</div>';
-            return;
-        }
-
-        if (!DATA.categories || DATA.categories.length === 0) {
-            contentDiv.innerHTML = '<div class="empty-message">No downloads available</div>';
-            return;
-        }
-
-        contentDiv.innerHTML = '';
-        
-        DATA.categories.forEach((category, catIndex) => {
-            try {
-                if (!category || !category.name) {
-                    console.warn(`Skipping invalid category at index ${catIndex}`);
-                    return;
-                }
-
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'category';
-                
-                const header = document.createElement('div');
-                header.className = 'category-header';
-                header.onclick = () => toggleCategory(catIndex);
-                header.innerHTML = `
-                    <span>${escapeHtml(category.name)}</span>
-                    <span id="icon-${catIndex}" class="toggle-icon">▼</span>
-                `;
-                
-                const itemsContainer = document.createElement('div');
-                itemsContainer.id = `items-${catIndex}`;
-                itemsContainer.className = 'items-container';
-                
-                if (!Array.isArray(category.items) || category.items.length === 0) {
-                    const emptyDiv = document.createElement('div');
-                    emptyDiv.className = 'empty-message';
-                    emptyDiv.textContent = 'No items in this category';
-                    itemsContainer.appendChild(emptyDiv);
-                } else {
-                    category.items.forEach((item, itemIndex) => {
-                        try {
-                            if (!item || !item.title) {
-                                console.warn(`Skipping invalid item at index ${itemIndex} in category ${category.name}`);
-                                return;
-                            }
-
-                            const itemDiv = document.createElement('div');
-                            itemDiv.className = 'item';
-                            
-                            let linksHTML = '';
-                            
-                            // Process magnet links
-                            if (Array.isArray(item.magnets) && item.magnets.length > 0) {
-                                item.magnets.forEach((magnet, magnetIndex) => {
-                                    if (magnet && typeof magnet === 'string' && magnet.trim()) {
-                                        const escapedMagnet = magnet.replace(/`/g, '\\`').replace(/\$/g, '\\$');
-                                        const magnetLabel = item.magnets.length > 1 ? ` ${magnetIndex + 1}` : '';
-                                        linksHTML += `
-                                            <div class="magnet-buttons" style="margin-bottom: 8px">
-                                                <a href="${escapeHtml(magnet)}" class="btn btn-primary">
-                                                    🧲 Magnet${magnetLabel}
-                                                </a>
-                                                <button class="btn btn-copy" onclick="copyToClipboard(\`${escapedMagnet}\`, this)">
-                                                    📋
-                                                </button>
-                                            </div>
-                                        `;
-                                    }
-                                });
-                            }
-                            
-                            // Process torrent files
-                            if (Array.isArray(item.torrents) && item.torrents.length > 0) {
-                                item.torrents.forEach((torrent, torrentIndex) => {
-                                    if (torrent && typeof torrent === 'string' && torrent.trim()) {
-                                        const torrentLabel = item.torrents.length > 1 ? ` ${torrentIndex + 1}` : '';
-                                        linksHTML += `
-                                            <div class="magnet-buttons" style="margin-bottom: 8px">
-                                                <a href="${escapeHtml(torrent)}" download class="btn btn-primary">
-                                                    📄 Torrent${torrentLabel}
-                                                </a>
-                                            </div>
-                                        `;
-                                    }
-                                });
-                            }
-
-                            if (!linksHTML) {
-                                linksHTML = '<div class="empty-message" style="margin: 0; padding: 8px;">No download links available</div>';
-                            }
-                            
-                            itemDiv.innerHTML = `
-                                <div class="item-title">${escapeHtml(item.title)}</div>
-                                <div class="item-version">${escapeHtml(item.version || 'N/A')}</div>
-                                <div class="item-info">
-                                    <span class="info-badge size">💾 ${escapeHtml(item.size || 'N/A')}</span>
-                                    <span class="info-badge seeders">🟢 ${escapeHtml(String(item.seeders ?? 0))} seeders</span>
-                                    <span class="info-badge leechers">🔴 ${escapeHtml(String(item.leechers ?? 0))} leechers</span>
-                                </div>
-                                <div class="magnet-section">
-                                    ${linksHTML}
-                                </div>
-                            `;
-                            
-                            itemsContainer.appendChild(itemDiv);
-                        } catch (itemError) {
-                            console.error(`Error rendering item ${itemIndex}:`, itemError);
-                        }
-                    });
-                }
-                
-                categoryDiv.appendChild(header);
-                categoryDiv.appendChild(itemsContainer);
-                contentDiv.appendChild(categoryDiv);
-            } catch (catError) {
-                console.error(`Error rendering category ${catIndex}:`, catError);
-            }
-        });
-
-    } catch (error) {
-        console.error('Fatal render error:', error);
-        const contentDiv = document.getElementById('content');
-        if (contentDiv) {
-            contentDiv.innerHTML = '<div class="error-message">An error occurred while loading content. Please refresh the page.</div>';
-        }
-    }
-}
-
-// Initialize
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        initTheme();
-        renderContent();
+    }).catch(() => {
+        showToast('Failed to copy');
     });
-} else {
-    initTheme();
+}
+
+// Toggle view
+function toggleView() {
+    showDownloaded = !showDownloaded;
+    const btn = document.getElementById('viewToggle');
+    btn.textContent = showDownloaded ? 'Downloaded' : 'Pending';
+    btn.classList.toggle('active', showDownloaded);
     renderContent();
 }
 
-window.addEventListener('error', (event) => {
-    console.error('Global error:', event.error);
-});
+// Toggle category
+function toggleCategory(index) {
+    expandedCategory = expandedCategory === index ? null : index;
+    renderContent();
+}
+
+// Mark as downloaded
+function markAsDownloaded(categoryIndex, itemId) {
+    const category = DATA.categories[categoryIndex];
+    const itemIndex = category.items.findIndex(item => item.id === itemId);
+    
+    if (itemIndex === -1) return;
+    
+    const item = category.items[itemIndex];
+    
+    // Add to downloaded
+    const existingCatIndex = downloadedData.categories.findIndex(c => c.name === category.name);
+    if (existingCatIndex >= 0) {
+        downloadedData.categories[existingCatIndex].items.push(item);
+    } else {
+        downloadedData.categories.push({
+            name: category.name,
+            items: [item]
+        });
+    }
+    
+    // Remove from DATA
+    DATA.categories[categoryIndex].items.splice(itemIndex, 1);
+    
+    showToast('Marked as downloaded!');
+    renderContent();
+}
+
+// Restore item
+function restoreItem(categoryIndex, itemId) {
+    const category = downloadedData.categories[categoryIndex];
+    const itemIndex = category.items.findIndex(item => item.id === itemId);
+    
+    if (itemIndex === -1) return;
+    
+    const item = category.items[itemIndex];
+    
+    // Add back to DATA
+    const existingCatIndex = DATA.categories.findIndex(c => c.name === category.name);
+    if (existingCatIndex >= 0) {
+        DATA.categories[existingCatIndex].items.push(item);
+    } else {
+        DATA.categories.push({
+            name: category.name,
+            items: [item]
+        });
+    }
+    
+    // Remove from downloaded
+    downloadedData.categories[categoryIndex].items.splice(itemIndex, 1);
+    
+    showToast('Restored to pending!');
+    renderContent();
+}
+
+// Render content
+function renderContent() {
+    const container = document.getElementById('content');
+    const currentData = showDownloaded ? downloadedData : DATA;
+    const displayCategories = currentData.categories.filter(cat => cat.items.length > 0);
+
+    if (displayCategories.length === 0) {
+        container.innerHTML = `<div class="empty-message">${showDownloaded ? 'No downloads yet' : 'No items available'}</div>`;
+        return;
+    }
+
+    let html = '';
+    displayCategories.forEach((category, catIndex) => {
+        const isOpen = expandedCategory === catIndex;
+        html += `
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(${catIndex})">
+                    <span class="category-name">${category.name}</span>
+                    <span class="toggle-icon ${isOpen ? 'rotated' : ''}">▼</span>
+                </div>
+                <div class="items-container ${isOpen ? 'open' : ''}">
+                    ${category.items.map(item => {
+                        // Collect all buttons
+                        const buttons = [];
+                        
+                        // Add magnets
+                        if (item.magnets) {
+                            item.magnets.forEach((magnet, idx) => {
+                                buttons.push({
+                                    type: 'magnet',
+                                    html: `<a href="${magnet}" class="btn btn-magnet" style="flex: 1;">🧲 Magnet${item.magnets.length > 1 ? ' ' + (idx + 1) : ''}</a>`
+                                });
+                            });
+                        }
+                        
+                        // Add torrents
+                        if (item.torrents) {
+                            item.torrents.forEach((torrent, idx) => {
+                                buttons.push({
+                                    type: 'torrent',
+                                    html: `<a href="${torrent}" download class="btn btn-torrent" style="flex: 1;">📄 Torrent${item.torrents.length > 1 ? ' ' + (idx + 1) : ''}</a>`
+                                });
+                            });
+                        }
+                        
+                        // Create buttons HTML
+                        let buttonsHtml = '';
+                        if (buttons.length > 0) {
+                            buttonsHtml = `
+                                <div class="button-row">
+                                    ${buttons.map(btn => btn.html).join('')}
+                                    <button class="btn btn-copy" onclick="copyToClipboard('${(item.magnets && item.magnets[0] || '').replace(/'/g, "\\'")}')">📋</button>
+                                </div>
+                            `;
+                        }
+                        
+                        return `
+                            <div class="item">
+                                <div class="item-header">
+                                    <div class="item-checkbox ${showDownloaded ? 'checked' : ''}" onclick="${showDownloaded ? `restoreItem(${catIndex}, '${item.id}')` : `markAsDownloaded(${catIndex}, '${item.id}')`}"></div>
+                                    <div class="item-main">
+                                        <div class="item-info">
+                                            <div class="item-title">${item.title}</div>
+                                            <div class="item-version">${item.version}</div>
+                                        </div>
+                                        <div class="item-stats">
+                                            ${item.size ? `<span class="stat-badge">💾 ${item.size}</span>` : ''}
+                                            ${item.seeders !== null && item.seeders !== undefined ? `<span class="stat-badge">🟢 ${item.seeders}</span>` : ''}
+                                            ${item.leechers !== null && item.leechers !== undefined ? `<span class="stat-badge">🔴 ${item.leechers}</span>` : ''}
+                                        </div>
+                                    </div>
+                                </div>
+                                ${buttonsHtml ? `<div class="buttons-section">${buttonsHtml}</div>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+// Initialize
+initTheme();
+renderContent();
