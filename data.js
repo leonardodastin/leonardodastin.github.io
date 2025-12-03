@@ -5,16 +5,6 @@ const DATA = {
             name: "Games",
             items: [
                 {
-                    id: "game-2",
-                    title: "GRID: Ultimate Edition",
-                    version: "v1.0.118.9362 + 8 DLCs",
-                    size: "37.1 GB",
-                    seeders: 10,
-                    leechers: 9,
-                    magnets: [String.raw`magnet:?xt=urn:btih:7A2C461163B86AA9E79D8E406FB24FB721841E02&dn=GRID%3A+Ultimate+Edition+%28v1.0.118.9362+%2B+8+DLCs%2C+MULTi7%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+37.1+GB%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.piratepublic.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
-                    torrents: null
-                },
-                {
                     id: "game-3",
                     title: "Grand Theft Auto: The Trilogy",
                     version: "The Definitive Edition v1.112.48699928",
@@ -37,21 +27,6 @@ const DATA = {
             ]
         },
         {
-            name: "Stranger Things",
-            items: [
-                {
-                    id: "st-1",
-                    title: "S05",
-                    version: "Parte.01.ITA.ENG.2160p.NF.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-MeM.GP",
-                    size: "40.2 GB",
-                    seeders: 362,
-                    leechers: 447,
-                    magnets: [String.raw`magnet:?xt=urn:btih:74A22624C3F2925B8BAE27F1140FE69B96D98E68&dn=Stranger.Things.S05.Parte.01.ITA.ENG.2160p.NF.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-MeM.GP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=http%3A%2F%2Fbt.okmp3.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=http%3A%2F%2Ftracker.mywaifu.best%3A6969%2Fannounce&tr=udp%3A%2F%2Fd40969.acod.regrucolo.ru%3A6969%2Fannounce&tr=udp%3A%2F%2Fttk2.nbaonlineservice.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.privateseedbox.xyz%3A2710%2Fannounce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=udp%3A%2F%2Fmartin-gebhardt.eu%3A25%2Fannounce&tr=http%3A%2F%2Ftracker.renfei.net%3A8080%2Fannounce&tr=https%3A%2F%2Ftracker.expli.top%3A443%2Fannounce&tr=https%3A%2F%2Ftr.nyacat.pw%3A443%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
-                    torrents: null
-                }
-            ]
-        },
-        {
             name: "Movies",
             items: [
                 {
@@ -67,12 +42,12 @@ const DATA = {
                 {
                     id: "movie-2",
                     title: "Tron: Ares (2025)",
-                    version: "Waiting till Jan 9 for HDR",
-                    size: null,
-                    seeders: null,
-                    leechers: null,
-                    magnets: null,
-                    torrents: null
+                    version: "Hybrid.2160p.WEB-DL.DV.HDR.DDP5.1.Atmos.H265-AOC ",
+                    size: "20.38 GB",
+                    seeders: 1165,
+                    leechers: 578,
+                    magnets: [String.raw`magnet:?xt=urn:btih:522DC4F30C6E027173BCD813F607B01EE127D13C&dn=Tron.Ares.2025.Hybrid.2160p.WEB-DL.DV.HDR.DDP5.1.Atmos.H265-AOC&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.birkenwald.de%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: ["./Torrents/Tron_Ares_2025.torrent"]
                 }
             ]
         }
@@ -88,4 +63,4 @@ window.downloadedData = downloadedData;
 window.expandedCategory = expandedCategory;
 window.showDownloaded = showDownloaded;
 
-// Date changed Dec 2 11:05 PM
+// Date changed Dec 3 09:57 PM
