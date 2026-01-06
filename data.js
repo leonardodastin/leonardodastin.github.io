@@ -2,17 +2,17 @@
 const DATA = {
     categories: [
         {
-            name: "Shows",
+            name: "Movies",
             items: [
                 {
-                    id: "shows-1",
-                    title: "Pluribus S01E06",
-                    version: "HDP 2160p ATVP WEB-DL DDP5 1 DV HDR H 265-NTb",
-                    size: "8.73GB",
-                    seeders: 2460,
-                    leechers: 5527,
-                    magnets: [String.raw`magnet:?xt=urn:btih:f665ecb9a834b6c3935e9c4baf672fe3ce5872b7&dn=Pluribus+S01E06+HDP+2160p+ATVP+WEB-DL+DDP5+1+DV+HDR+H+265-NTb+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
+                    id: "mv-1",
+                    title: "Predator.Badlands.2025",
+                    version: "2160p.iT.WEB-DL.DV.HDR10+.MULTi.DDP5.1.Atmos.H265.MP4-BEN.THE.MEN",
+                    size: "22.9GB",
+                    seeders: 693,
+                    leechers: 1045,
+                    magnets: [String.raw`magnet:?xt=urn:btih:9c652e73c46947b41384594c92dc4996b919583e&dn=Predator.Badlands.2025.2160p.iT.WEB-DL.DV.HDR10 .MULTi.DDP5.1.Atmos.H265.MP4-BEN.THE.MEN&xl=24591767116&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://open.stealth.si:80/announce&tr=udp://public.demonoid.ch:6969/announce&tr=udp://explodie.org:6969/announce&tr=udp://open.demonii.com:1337/announce&tr=udp://open.demonoid.ch:6969/announce&tr=http://bvarf.tracker.sh:2086/announce&tr=http://tracker.renfei.net:8080/announce&tr=https://tracker.pmman.tech:443/announce&tr=udp://bandito.byterunner.io:6969/announce&tr=udp://d40969.acod.regrucolo.ru:6969/announc&tr=http://tracker.bt4g.com:2095/announce&tr=http://bt.okmp3.ru:2710/announce&tr=udp://tracker.torrent.eu.org:451/announce`],
+                    torrents: 'Torrents/Predator.Badlands.2025.torrent'
                 },
                 {
                     id: "shows-2",
@@ -38,4 +38,4 @@ window.downloadedData = downloadedData;
 window.expandedCategory = expandedCategory;
 window.showDownloaded = showDownloaded;
 
-// Date changed Dec 6 08:22 PM
+// Date changed Jan 7 12:15 PM
