@@ -37,38 +37,23 @@
 const DATA = {
     categories: [
         {
-            name: "One Piece S02",
+            name: "Formula 1 2026 : R02 ChineseGP",
             items: [
                 {
-                    id: "op-1",
-                    title: "One Piece S02E01",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "1.65 GB",
-                    seeders: 1500,
-                    leechers: 1500,
-                    magnets: [String.raw`magnet:?xt=urn:btih:3b1522f474919cfa46b8c1af8d6042866a9722bb&dn=ONE+PIECE+2023+S02E01+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
+                    id: "fc-1",
+                    title: "Sprint Qualifying",
+                    version: "F1TV 4K HLG 2160p",
+                    size: "10.5 GB",
+                    seeders: 0,
+                    leechers: 0,
+                    magnets: [String.raw`magnet:?xt=urn:btih:B934FFCE945BC96FFD743FCF5D18C15A9D70495C&dn=Formula.1.2026x16.R02.ChineseGP.Sprint.Qualifying.F1TV.4K.HLG.2160p.SS&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ffree.publictracker.xyz%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta.me%3A2710%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fuploads.gamecoast.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.iamhansen.xyz%3A2000%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fcarr.codes%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
-                },
-                {
-                    id: "op-2",
-                    title: "One Piece S02E02",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "1.65 GB",
-                    seeders: 1500,
-                    leechers: 1500,
-                    magnets: [String.raw`magnet:?xt=urn:btih:a50fd36699158187459f65b89227eae9f605c372&dn=ONE+PIECE+2023+S02E02+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                },
-                {
-                    id: "op-3",
-                    title: "One Piece S02E03",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "1.65 GB",
-                    seeders: 1500,
-                    leechers: 1500,
-                    magnets: [String.raw`magnet:?xt=urn:btih:a69a3e69fb304b382630ae4de663e2c36019df23&dn=ONE+PIECE+2023+S02E03+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                },
+                }
+            ]
+        },
+        {
+            name: "One Piece S02",
+            items: [
                 {
                     id: "op-4",
                     title: "One Piece S02E04",
