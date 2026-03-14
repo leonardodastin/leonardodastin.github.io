@@ -70,7 +70,32 @@ const DATA = {
                     torrents: null
                 }
             ]
-        }
+        },
+        {
+            name: "Movies",
+            items: [
+                {
+                    id: "mv-1",
+                    title: "Maharaja (2024) 4K YTS",
+                    version: "2160p 4k WEBRip x265 10bit 5.1 YTS YIFY",
+                    size: "6.29 GB",
+                    seeders: 26,
+                    leechers: 4,
+                    magnets: [String.raw`magnet:?xt=urn:btih:8c2d0032e91cd71bf2273a2f2f802976e0806b10&dn=Maharaja (2024) 2160p 4k WEBRip x265 10bit 5.1 YTS YIFY&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.com:2710/announce&tr=udp://p4p.arenabg.com:1337&tr=udp://tracker.internetwarriors.net:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.zer0day.to:1337/announce&tr=udp://tracker.leechers-paradise.org:6969/announce&tr=udp://coppersurfer.tk:6969/announce`],
+                    torrents: null
+                },
+                {
+                    id: "mv-2",
+                    title: "Maharaja (2024) 1080p QxR",
+                    version: "1080p NF WEB-DL x265 HEVC 10bit EAC3 5.1 Tamil SAMPA [QxR]",
+                    size: "2.7 GB",
+                    seeders: 63,
+                    leechers: 15,
+                    magnets: [String.raw`magnet:?xt=urn:btih:F9FD0671C4273045C142046224500BE6600EB84E&dn=Maharaja+%282024%29+%281080p+NF+WEB-DL+x265+HEVC+10bit+EAC3+5.1+Tamil+SAMPA%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                }
+            ]
+        },
     ]
 };
 
