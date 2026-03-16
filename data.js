@@ -109,6 +109,22 @@ const DATA = {
                     torrents: null
                 }
             ]
+        },
+        {
+            name: "Boss Level",
+            items: [
+                {
+                    id: "bl-2",
+                    title: "2160p HDR QxR",
+                    version: "(2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole) [QxR]",
+                    size: "9.3 GB",
+                    seeders: 23,
+                    leechers: 6,
+                    magnets: [String.raw`magnet:?xt=urn:btih:DC544BBA213CFDE583C1780F4AB824DA319D361D&dn=Boss+Level+%282021%29+%282160p+BluRay+x265+HEVC+10bit+HDR+AAC+5.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`,
+                        String.raw`magnet:?xt=urn:btih:DC544BBA213CFDE583C1780F4AB824DA319D361D&dn=Boss Level (2021) (2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole) [QxR]&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://tracker.openbittorrent.com:6969/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=http://tracker.openbittorrent.com:80/announce&tr=udp://opentracker.i2p.rocks:6969/announce&tr=udp://tracker.internetwarriors.net:1337/announce&tr=udp://tracker.leechers-paradise.org:6969/announce&tr=udp://coppersurfer.tk:6969/announce&tr=udp://tracker.zer0day.to:1337/announce`],
+                    torrents: null
+                }
+            ]
         }
     ]
 };
