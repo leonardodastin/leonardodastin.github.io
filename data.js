@@ -111,7 +111,6 @@ const DATA = {
             ]
         }
     ]
-    ]
 };
 
 let downloadedData = { categories: [] };
