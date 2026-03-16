@@ -54,12 +54,22 @@ function toggleCategory(index) {
 }
 
 // Mark as downloaded
-function markAsDownloaded(categoryIndex, itemId) {
+function markAsDownloaded(itemId) {
+    let categoryIndex = -1;
+    let itemIndex = -1;
+    
+    // Find the item and its category by unique ID
+    for (let i = 0; i < DATA.categories.length; i++) {
+        itemIndex = DATA.categories[i].items.findIndex(item => item.id === itemId);
+        if (itemIndex !== -1) {
+            categoryIndex = i;
+            break;
+        }
+    }
+    
+    if (categoryIndex === -1 || itemIndex === -1) return;
+    
     const category = DATA.categories[categoryIndex];
-    const itemIndex = category.items.findIndex(item => item.id === itemId);
-    
-    if (itemIndex === -1) return;
-    
     const item = category.items[itemIndex];
     
     // Add to downloaded
@@ -81,12 +91,22 @@ function markAsDownloaded(categoryIndex, itemId) {
 }
 
 // Restore item
-function restoreItem(categoryIndex, itemId) {
+function restoreItem(itemId) {
+    let categoryIndex = -1;
+    let itemIndex = -1;
+    
+    // Find the item and its category by unique ID
+    for (let i = 0; i < downloadedData.categories.length; i++) {
+        itemIndex = downloadedData.categories[i].items.findIndex(item => item.id === itemId);
+        if (itemIndex !== -1) {
+            categoryIndex = i;
+            break;
+        }
+    }
+    
+    if (categoryIndex === -1 || itemIndex === -1) return;
+    
     const category = downloadedData.categories[categoryIndex];
-    const itemIndex = category.items.findIndex(item => item.id === itemId);
-    
-    if (itemIndex === -1) return;
-    
     const item = category.items[itemIndex];
     
     // Add back to DATA
@@ -166,7 +186,7 @@ function renderContent() {
                         return `
                             <div class="item">
                                 <div class="item-header">
-                                    <div class="item-checkbox ${showDownloaded ? 'checked' : ''}" onclick="${showDownloaded ? `restoreItem(${catIndex}, '${item.id}')` : `markAsDownloaded(${catIndex}, '${item.id}')`}"></div>
+                                    <div class="item-checkbox ${showDownloaded ? 'checked' : ''}" onclick="${showDownloaded ? `restoreItem('${item.id}')` : `markAsDownloaded('${item.id}')`}"></div>
                                     <div class="item-main">
                                         <div class="item-info">
                                             <div class="item-title">${item.title}</div>
