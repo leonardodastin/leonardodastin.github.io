@@ -37,35 +37,6 @@
 const DATA = {
     categories: [
         {
-            name: "Maharaja (2024)",
-            items: [
-                {
-                    id: "mh-1",
-                    title: "2160p",
-                    version: "2160p 4k WEBRip x265 10bit 5.1 YTS YIFY",
-                    size: "6.29 GB",
-                    seeders: 26,
-                    leechers: 4,
-                    magnets: [String.raw`magnet:?xt=urn:btih:8c2d0032e91cd71bf2273a2f2f802976e0806b10&dn=Maharaja%20%282024%29%20%5B2160p%5D%20%5B4K%5D%20%5BWEB%5D%20%5B5.1%5D%20%5BYTS.MX%5D&xl=6753140654&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=https%3A%2F%2Fopentracker.i2p.rocks%3A443%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce`,
-                        String.raw`magnet:?xt=urn:btih:8c2d0032e91cd71bf2273a2f2f802976e0806b10&dn=Maharaja (2024) 2160p 4k WEBRip x265 10bit 5.1 YTS YIFY&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.com:2710/announce&tr=udp://p4p.arenabg.com:1337&tr=udp://tracker.internetwarriors.net:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.zer0day.to:1337/announce&tr=udp://tracker.leechers-paradise.org:6969/announce&tr=udp://coppersurfer.tk:6969/announce`
-                    ],
-                    torrents: null
-                },
-                {
-                    id: "mh-2",
-                    title: "1080p",
-                    version: "1080p NF WEB-DL DD 5 1 H 264-playWEB",
-                    size: "5.52 GB",
-                    seeders: 6,
-                    leechers: 9,
-                    magnets: [String.raw`magnet:?xt=urn:btih:7ef826a63fbf4ef21775ad6d786db785de1e2a17&dn=Maharaja+2024+1080p+NF+WEB-DL+DD+5+1+H+264-playWEB+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`,
-                        String.raw`magnet:?xt=urn:btih:7EF826A63FBF4EF21775AD6D786DB785DE1E2A17&dn=Maharaja 2024 1080p NF WEB-DL DD 5 1 H 264-playWEB&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.me:2850/announce&tr=udp://9.rarbg.to:2920/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://tracker.leechers-paradise.org:6969/announce`
-                    ],
-                    torrents: null
-                }
-            ]
-        },
-        {
             name: "The Dinosaurs (20.18 GB)",
             items: [
                 {
@@ -106,22 +77,6 @@ const DATA = {
                     seeders: 164,
                     leechers: 65,
                     magnets: [String.raw`magnet:?xt=urn:btih:41412ae661de8ac5b2d8d3e97fdbab54e7a8333d&dn=The+Dinosaurs+S01E04+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                }
-            ]
-        },
-        {
-            name: "Boss Level",
-            items: [
-                {
-                    id: "bl-2",
-                    title: "2160p HDR QxR",
-                    version: "(2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole) [QxR]",
-                    size: "9.3 GB",
-                    seeders: 23,
-                    leechers: 6,
-                    magnets: [String.raw`magnet:?xt=urn:btih:DC544BBA213CFDE583C1780F4AB824DA319D361D&dn=Boss+Level+%282021%29+%282160p+BluRay+x265+HEVC+10bit+HDR+AAC+5.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`,
-                        String.raw`magnet:?xt=urn:btih:DC544BBA213CFDE583C1780F4AB824DA319D361D&dn=Boss Level (2021) (2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole) [QxR]&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://tracker.openbittorrent.com:6969/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=http://tracker.openbittorrent.com:80/announce&tr=udp://opentracker.i2p.rocks:6969/announce&tr=udp://tracker.internetwarriors.net:1337/announce&tr=udp://tracker.leechers-paradise.org:6969/announce&tr=udp://coppersurfer.tk:6969/announce&tr=udp://tracker.zer0day.to:1337/announce`],
                     torrents: null
                 }
             ]
