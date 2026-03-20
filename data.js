@@ -37,51 +37,6 @@
 const DATA = {
     categories: [
         {
-            name: "The Dinosaurs (20.18 GB)",
-            items: [
-                {
-                    id: "di-01",
-                    title: "S01E01",
-                    version: "1080p WEB h264-EDITH",
-                    size: "1.89 GB",
-                    seeders: 916,
-                    leechers: 1455,
-                    magnets: [String.raw`magnet:?xt=urn:btih:EDA093284DB6791008D6C24C6F8DA05D4F87D22E&dn=The+Dinosaurs+S01E01+1080p+WEB+h264-EDITH+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                },
-                {
-                    id: "di-02",
-                    title: "S01E02",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "6.39 GB",
-                    seeders: 138,
-                    leechers: 80,
-                    magnets: [String.raw`magnet:?xt=urn:btih:a3b0abb1ed77e89621ebd87c6913d684d04d06cf&dn=The+Dinosaurs+S01E02+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                },
-                {
-                    id: "di-03",
-                    title: "S01E03",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "5.94 GB",
-                    seeders: 147,
-                    leechers: 77,
-                    magnets: [String.raw`magnet:?xt=urn:btih:f2a3a6424f004ebc22ff6fb94343ac20e1346bbb&dn=The+Dinosaurs+S01E03+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                },
-                {
-                    id: "di-04",
-                    title: "S01E04",
-                    version: "2160p NF WEB-DL DDP5 1 Atmos DV HDR H 265-BiOMA",
-                    size: "5.96 GB",
-                    seeders: 164,
-                    leechers: 65,
-                    magnets: [String.raw`magnet:?xt=urn:btih:41412ae661de8ac5b2d8d3e97fdbab54e7a8333d&dn=The+Dinosaurs+S01E04+2160p+NF+WEB-DL+DDP5+1+Atmos+DV+HDR+H+265-BiOMA+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`],
-                    torrents: null
-                }
-            ]
-        },
-        {
             name: "Breaking Bad",
             items: [
                 {
