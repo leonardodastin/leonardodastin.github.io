@@ -102,6 +102,16 @@ const DATA = {
             name: "Breaking Bad",
             items: [
                 {
+                    id: "bb-2",
+                    title: "Downloaded",
+                    version: "S01E01-S01E03",
+                    size: "49.6GB",
+                    seeders: null,
+                    leechers: null,
+                    magnets: null,
+                    torrents: null
+                },
+                {
                     id: "bb-21",
                     title: "Complete 1080p",
                     version: "Full HD BD-Remux by Wild_Cat",
