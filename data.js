@@ -36,19 +36,34 @@
 // data.js
 const DATA = {
     categories: [
-         {
-            name: "Scream 7",
+        {
+            name: "Ready or Not ",
             items: [
                 {
-                    id: "sc-2",
-                    title: "1080p",
-                    version: "WEB-DL HEVC x265 10Bit DDP5.1 Subs KINGDOM",
-                    size: "5.63 GB",
-                    seeders: 373 ,
-                    leechers: 148 ,
-                    magnets: [String.raw`magnet:?xt=urn:btih:4B42E4415A6086B5A12EAA1E57E2843C9C1847C8&dn=Scream+7+2026+1080p+WEB-DL+HEVC+x265+10Bit+DDP5.1+Subs+KINGDOM&tr=http%3A%2F%2Ftracker810.xyz%3A11450%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Fwww.torrentsnipe.info%3A2701%2Fannounce&tr=http%3A%2F%2Ftracker.bz%3A80%2Fannounce&tr=http%3A%2F%2Fbt.okmp3.ru%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker1.520.jp%3A443%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=http%3A%2F%2Ftracker.vraphim.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.corpscorp.online%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.io%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`,
-                        String.raw`magnet:?xt=urn:btih:4d990bdc7b1211d7e026a70b6507bda0eb3a8b34&dn=Scream+7+2026+1080p+WEB-DL+HEVC+x265+10Bit+DDP5+1+Subs+KINGDOM+%5B+UIndex.org+%5D%20%20%20%20%20%20%20%20&tr=udp://tracker.bittor.pw:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.opentrackr.org:1337/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.dler.org:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.stealth.si:80/announce%20%20%20%20%20%20%20%20&tr=udp://tracker.torrent.eu.org:451/announce%20%20%20%20%20%20%20%20&tr=udp://exodus.desync.com:6969/announce%20%20%20%20%20%20%20%20&tr=udp://open.demonii.com:1337/announce`,
-                        String.raw`magnet:?xt=urn:btih:4b42e4415a6086b5a12eaa1e57e2843c9c1847c8&dn=Scream 7 2026 1080p WEB-DL HEVC x265 10Bit DDP5.1 Subs KINGDOM_RG&xl=6042624649&tr=http://tracker810.xyz:11450/announce&tr=http://tracker.opentrackr.org:1337/announce&tr=http://www.torrentsnipe.info:2701/announce&tr=http://tracker.bz:80/announce&tr=http://bt.okmp3.ru:2710/announce&tr=https://tracker1.520.jp:443/announce&tr=http://tracker.bt4g.com:2095/announce&tr=http://tracker.vraphim.com:6969/announce&tr=http://tracker.corpscorp.online:80/announce&tr=udp://opentracker.io:6969/announce&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://exodus.desync.com:6969/announce&tr=udp://open.stealth.si:80/announce&tr=udp://open.demonii.com:1337/announce`],
+                    id: "sa-2",
+                    title: "4K HDR",
+                    version: "DV 2160p WEBDL Ita Eng x265-NAHOM",
+                    size: "18.7 GB",
+                    seeders: 40,
+                    leechers: 16,
+                    magnets: [String.raw`magnet:?xt=urn:btih:7B6A2E2B2CCC9EB1B6E97F749E6CAA1C1B91C097&dn=Ready.or.Not.2019.4K.HDR.DV.2160p.WEBDL+Ita+Eng+x265-NAHOM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                }
+            ]
+        },
+        {
+            name: "Sinners",
+            items: [
+                {
+                    id: "sa-2",
+                    title: "IMAX 2160p",
+                    version: "BluRay HDR10P DV HEVC TrueHD Atmos 7 1 x265-E",
+                    size: "33.4 GB",
+                    seeders: 72,
+                    leechers: 22,
+                    magnets: [String.raw`magnet:?xt=urn:btih:845B5E10CF250488B6180437C57780F14DE32E2B&dn=Sinners.2025.IMAX.UHD.BluRay.2160p.HDR10P.DV.HEVC.TrueHD.Atmos.7.1.x265-E&tr=udp%3A%2F%2Fopentracker.io%3A6969%2Fannoun%E2%80%8Bce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tryhackx.org%3A6969%2F%E2%80%8Bannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Ftracker.fnix.net%3A6969%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounc%E2%80%8Be&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta.me%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker1.520.jp%3A443%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`,
+                        String.raw`magnet:?xt=urn:btih:845B5E10CF250488B6180437C57780F14DE32E2B&dn=Sinners.2025.IMAX.UHD.BluRay.2160p.HDR10P.DV.HEVC.TrueHD.Atmos.7....+%5B+UIndex.org+%5D&tr=udp://tracker.bittor.pw:1337/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.dler.org:6969/announce&tr=udp://open.stealth.si:80/announce&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://exodus.desync.com:6969/announce&tr=udp://open.demonii.com:1337/announce`,
+                        String.raw`magnet:?xt=urn:btih:845B5E10CF250488B6180437C57780F14DE32E2B&dn=Sinners.2025.IMAX.UHD.BluRay.2160p.HDR10P.DV.HEVC.TrueHD.Atmos.7.1.x265-E&tr=udp://opentracker.io:6969/announ​ce&tr=udp://evan.im:6969/announce&tr=udp://explodie.org:6969/announce&tr=udp://tracker-udp.gbitt.info:80/announce&tr=udp://tracker.tryhackx.org:6969/​announce&tr=udp://open.demonii.com:1337/anno​unce&tr=udp://tracker.fnix.net:6969/anno​unce&tr=udp://open.stealth.si:80/announc​e&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://retracker.lanta.me:2710/announce&tr=https://tracker1.520.jp:443/announce&tr=udp://www.torrent.eu.org:451/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=http://tracker.openbittorrent.com:80/announce&tr=udp://opentracker.i2p.rocks:6969/announce&tr=udp://tracker.internetwarriors.net:1337/announce&tr=udp://tracker.leechers-paradise.org:6969/announce&tr=udp://coppersurfer.tk:6969/announce&tr=udp://tracker.zer0day.to:1337/announce`],
                     torrents: null
                 }
             ]
