@@ -82,7 +82,7 @@ const DATA = {
             ]
         },
         {
-            name: "Movies",
+            name: "Movies - 42.15GB",
             items: [
                 {
                     id: "mv-1",
