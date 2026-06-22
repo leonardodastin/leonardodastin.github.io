@@ -56,9 +56,23 @@ body {
     margin-bottom: 24px;
 }
 
+/* Wraps h1 + grand total so they stack vertically on the left */
+.header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 h1 {
     font-size: 24px;
     font-weight: 700;
+}
+
+/* Grand total below the h1 — subtle secondary text */
+.grand-total {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .header-buttons {
@@ -113,9 +127,23 @@ h1 {
     opacity: 0.9;
 }
 
+/* Stacks category name + size sub-text vertically */
+.category-name-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .category-name {
     font-weight: 600;
     font-size: 16px;
+}
+
+/* Size sub-text under category name — slightly smaller than item-version */
+.category-size {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 400;
 }
 
 .toggle-icon {

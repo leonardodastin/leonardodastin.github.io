@@ -57,7 +57,7 @@ function toggleCategory(index) {
 function markAsDownloaded(itemId) {
     let categoryIndex = -1;
     let itemIndex = -1;
-    
+
     // Find the item and its category by unique ID
     for (let i = 0; i < DATA.categories.length; i++) {
         itemIndex = DATA.categories[i].items.findIndex(item => item.id === itemId);
@@ -66,12 +66,12 @@ function markAsDownloaded(itemId) {
             break;
         }
     }
-    
+
     if (categoryIndex === -1 || itemIndex === -1) return;
-    
+
     const category = DATA.categories[categoryIndex];
     const item = category.items[itemIndex];
-    
+
     // Add to downloaded
     const existingCatIndex = downloadedData.categories.findIndex(c => c.name === category.name);
     if (existingCatIndex >= 0) {
@@ -82,10 +82,10 @@ function markAsDownloaded(itemId) {
             items: [item]
         });
     }
-    
+
     // Remove from DATA
     DATA.categories[categoryIndex].items.splice(itemIndex, 1);
-    
+
     showToast('Marked as downloaded!');
     renderContent();
 }
@@ -94,7 +94,7 @@ function markAsDownloaded(itemId) {
 function restoreItem(itemId) {
     let categoryIndex = -1;
     let itemIndex = -1;
-    
+
     // Find the item and its category by unique ID
     for (let i = 0; i < downloadedData.categories.length; i++) {
         itemIndex = downloadedData.categories[i].items.findIndex(item => item.id === itemId);
@@ -103,12 +103,12 @@ function restoreItem(itemId) {
             break;
         }
     }
-    
+
     if (categoryIndex === -1 || itemIndex === -1) return;
-    
+
     const category = downloadedData.categories[categoryIndex];
     const item = category.items[itemIndex];
-    
+
     // Add back to DATA
     const existingCatIndex = DATA.categories.findIndex(c => c.name === category.name);
     if (existingCatIndex >= 0) {
@@ -119,12 +119,27 @@ function restoreItem(itemId) {
             items: [item]
         });
     }
-    
+
     // Remove from downloaded
     downloadedData.categories[categoryIndex].items.splice(itemIndex, 1);
-    
+
     showToast('Restored to pending!');
     renderContent();
+}
+
+// Parse a size string to a float in GB.
+// Accepts formats like "22.9GB", "4.5 GB", "500MB", "500 MB", "2.3TB", "2.3 TB".
+// Returns 0 for missing, empty, or non-numeric input.
+function parseSize(sizeStr) {
+    if (!sizeStr) return 0;
+    const match = sizeStr.trim().match(/([\d.]+)\s*(GB|MB|TB)/i);
+    if (!match) return 0;
+    const value = parseFloat(match[1]);
+    const unit = match[2].toUpperCase();
+    if (isNaN(value)) return 0;
+    if (unit === 'MB') return value / 1024;
+    if (unit === 'TB') return value * 1024;
+    return value; // already GB
 }
 
 // Render content
@@ -133,25 +148,45 @@ function renderContent() {
     const currentData = showDownloaded ? downloadedData : DATA;
     const displayCategories = currentData.categories.filter(cat => cat.items.length > 0);
 
+    // Empty state — still show 0.00 GB grand total
     if (displayCategories.length === 0) {
         container.innerHTML = `<div class="empty-message">${showDownloaded ? 'No downloads yet' : 'No items available'}</div>`;
+        document.getElementById('grandTotal').textContent = 'Current : 0.00 GB';
         return;
     }
 
+    // --- Size calculations (single pass over the data) ---
+    // categoryTotals[i] is the total GB for displayCategories[i]
+    let grandTotal = 0;
+    const categoryTotals = displayCategories.map(category => {
+        const catTotal = category.items.reduce((sum, item) => sum + parseSize(item.size), 0);
+        grandTotal += catTotal;
+        return catTotal;
+    });
+
+    // Update grand total text — reflects only the currently visible view
+    document.getElementById('grandTotal').textContent = `Current : ${grandTotal.toFixed(2)} GB`;
+
+    // --- Build HTML ---
     let html = '';
     displayCategories.forEach((category, catIndex) => {
         const isOpen = expandedCategory === catIndex;
+        const catSize = categoryTotals[catIndex];
+
         html += `
             <div class="category">
                 <div class="category-header" onclick="toggleCategory(${catIndex})">
-                    <span class="category-name">${category.name}</span>
+                    <div class="category-name-block">
+                        <span class="category-name">${category.name}</span>
+                        <span class="category-size">Size : ${catSize.toFixed(2)} GB</span>
+                    </div>
                     <span class="toggle-icon ${isOpen ? 'rotated' : ''}">▼</span>
                 </div>
                 <div class="items-container ${isOpen ? 'open' : ''}">
                     ${category.items.map(item => {
                         // Collect all buttons
                         const buttons = [];
-                        
+
                         // Add magnets
                         if (item.magnets) {
                             item.magnets.forEach((magnet, idx) => {
@@ -161,7 +196,7 @@ function renderContent() {
                                 });
                             });
                         }
-                        
+
                         // Add torrents
                         if (item.torrents) {
                             item.torrents.forEach((torrent, idx) => {
@@ -171,7 +206,7 @@ function renderContent() {
                                 });
                             });
                         }
-                        
+
                         // Create buttons HTML
                         let buttonsHtml = '';
                         if (buttons.length > 0) {
@@ -182,7 +217,7 @@ function renderContent() {
                                 </div>
                             `;
                         }
-                        
+
                         return `
                             <div class="item">
                                 <div class="item-header">
