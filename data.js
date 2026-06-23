@@ -48,25 +48,80 @@ const DATA = {
                     leechers: 91,
                     magnets: [String.raw`magnet:?xt=urn:btih:d87ee26d833d6a57e622480470e4d0ee88d1a643&dn=They.Will.Kill.You.2026.2160p.iT.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-SCOPE&xl=17911348904&tr=udp://tracker.opentrackr.org:1337/announce&tr=http://tracker.opentrackr.org:1337/announce&tr=http://lucke.fenesisu.moe:6969/announce&tr=http://bt1.us.archive.org:6969/announce&tr=http://bt2.us.archive.org:6969/announce&tr=http://tracker.dhitechnical.com:6969/announce&tr=http://tracker.darkness.services:6969/announce&tr=http://bt.okmp3.ru:2710/announce&tr=http://open.acgtracker.com:1096/announce&tr=http://pow7.com/announce&tr=http://tracker.beeimg.com:6969/announce&tr=http://tracker.bt4g.com:2095/announce&tr=http://tracker.internetwarriors.net:1337/announce&tr=udp://tracker.alaskantf.com:6969/announce&tr=https://tracker.alaskantf.com:443/announce&tr=udp://6ahddutb1ucc3cp.ru:6969/announce&tr=udp://exodus.desync.com:6969&tr=udp://explodie.org:6969/announce&tr=udp://glotorrents.pw:6969/announce&tr=udp://martin-gebhardt.eu:25/announce&tr=udp://ns-1.x-fins.com:6969/announce&tr=udp://open.demonii.com:1337&tr=udp://open.free-tracker.ga:6969/announce&tr=udp://open.stealth.si:80/announce&tr=udp://open.tracker.cl:1337/announce&tr=udp://opentracker.io:6969/announce&tr=udp://p4p.arenabg.com:1337/announce&tr=udp://retracker01-msk-virt.corbina.net:80/announce&tr=udp://run.publictracker.xyz:6969/announce&tr=udp://tracker-udp.gbitt.info:80/announce&tr=udp://tracker.0x7c0.com:6969/announce&tr=udp://tracker.bittor.pw:1337/announce&tr=udp://tracker.dler.org:6969/announce&tr=udp://tracker.fnix.net:6969/announce&tr=udp://tracker.qu.ax:6969/announce&tr=udp://tracker.srv00.com:6969/announce&tr=udp://tracker.theoks.net:6969/announce&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://tracker.uw0.xyz:6969/announce&tr=udp://tracker.vanitycore.co:6969/announce&tr=udp://zer0day.ch:1337&tr=https://tracker.wildkat.net:8443/announce&tr=udp://tracker.wildkat.net:6969/announce`],
                     torrents: null
-                },
+                }
+            ]
+        },
+        {
+            name: "Just Like Heaven 2005",
+            items: [
                 {
-                    id: "mv-4",
-                    title: "Rogue (2007)",
-                    version: "(1080p BluRay x265 10bit EAC3 5.1 Ghost) [QxR] ",
-                    size: "4.4 GB",
-                    seeders: 65,
-                    leechers: 55,
-                    magnets: [String.raw`magnet:?xt=urn:btih:676947E36B888FADB5D76F355163A43773093DE7&dn=Rogue+%282007%29+%281080p+BluRay+x265+10bit+EAC3+5.1+Ghost%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    id: "jh-1",
+                    title: "2160p LowSeeds",
+                    version: "2160p.NF.WEB-DL.H.265.DDP5.1-QuickIO SDR 4k UHD GoodFilms ",
+                    size: "9.37GB",
+                    seeders: 9,
+                    leechers: 21,
+                    magnets: [String.raw`magnet:?xt=urn:btih:38A88D94BC8C3A7B4EC13C50AC05BB60FFDBBC0D&dn=Just.Like.Heaven.2005.2160p.NF.WEB-DL.H.265.DDP5.1-QuickIO SDR 4k UHD GoodFilms&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.me:2850/announce&tr=udp://9.rarbg.to:2920/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://tracker.leechers-paradise.org:6969/announce`],
                     torrents: null
                 },
                 {
-                    id: "mv-5",
-                    title: "An American Pickle 2020",
-                    version: "1080p WEB-DL H264 AC3-EVO[TGx] ",
-                    size: "5.3GB",
+                    id: "jh-2",
+                    title: "1080p HighSeeds",
+                    version: "1080p MAX WEB-DL DDP 5 1 H 265-PiRaTeS[TGx]",
+                    size: "2.3GB",
+                    seeders: 38,
+                    leechers: 5,
+                    magnets: [String.raw`magnet:?xt=urn:btih:3C51A871E5FF45A8FA346148962A7E6677D196DF&dn=Just.Like.Heaven.2005.1080p.MAX.WEB-DL.DDP.5.1.H.265-PiRaTeS%5BTGx%5D&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.birkenwald.de%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fuploads.gamecoast.net%3A6969%2Fannounce&tr=https%3A%2F%2Ftracker.foreverpirates.co%3A443%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                }
+            ]
+        },
+        {
+            name: "Shallow Hal 2001",
+            items: [
+                {
+                    id: "sh-1",
+                    title: "HighQuality LowSeeds",
+                    version: "1080p.WEB-DL.ENG.LATINO.CASTELLANO.DDP5.1.H264-BEN.THE.MEN",
+                    size: "7.34GB",
+                    seeders: 5,
+                    leechers: 2,
+                    magnets: [String.raw`magnet:?xt=urn:btih:D66211991BB8CA1F7E60C442C46AD260C09FC212&dn=Shallow.Hal.2001.1080p.WEB-DL.ENG.LATINO.CASTELLANO.DDP5.1.H264-BEN.THE.MEN&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.me:2850/announce&tr=udp://9.rarbg.to:2920/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://tracker.leechers-paradise.org:6969/announce`],
+                    torrents: null
+                },
+                {
+                    id: "sh-2",
+                    title: "LowQuality HighSeeds",
+                    version: "1080p BluRay HEVC x265 5.1 BONE",
+                    size: "1.6GB",
                     seeders: 25,
-                    leechers: 1,
-                    magnets: [String.raw`magnet:?xt=urn:btih:F216D21A9642E08F641112CC69872D34AEA2D0C9&dn=An.American.Pickle.2020.1080p.WEB-DL.H264.AC3-EVO%5BTGx%5D+%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.iamhansen.xyz%3A2000%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    leechers: 5,
+                    magnets: [String.raw`magnet:?xt=urn:btih:CD82BDB64C9D3392B3FC0B69E737021BF2596F55&dn=Shallow+Hal+2001+1080p+BluRay+HEVC+x265+5.1+BONE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopentracker.io%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2F&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fbandito.byterunner.io%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.ipv6tracker.org%2Fannounce&tr=udp%3A%2F%2Ftracker2.dler.org%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fbt.ktrackers.com%3A6666%2Fannounce&tr=udp%3A%2F%2Ftracker.qu.ax%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                }
+            ]
+        },
+        {
+            name: "What Women Want (2000)",
+            items: [
+                {
+                    id: "ww-1",
+                    title: "HighQuality LowSeeds",
+                    version: "1080p.REMUX.ENG.RUS.LATINO-BEN.THE.MEN",
+                    size: "19.63GB",
+                    seeders: 12,
+                    leechers: 3,
+                    magnets: [String.raw`magnet:?xt=urn:btih:204D82D36BE7EF87370DF0E60CD9AFECF2AED489&dn=What.Women.Want.2000.1080p.REMUX.ENG.RUS.LATINO-BEN.THE.MEN&tr=udp://tracker.coppersurfer.tk:6969/announce&tr=udp://9.rarbg.me:2850/announce&tr=udp://9.rarbg.to:2920/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://tracker.leechers-paradise.org:6969/announce`],
+                    torrents: null
+                },
+                {
+                    id: "ww-2",
+                    title: "LowQuality HighSeeds",
+                    version: "(1080p BluRay x265 HEVC 10bit AAC 5 1 Tigole) [QxR]",
+                    size: "6.2 GB",
+                    seeders: 24,
+                    leechers: 3,
+                    magnets: [String.raw`magnet:?xt=urn:btih:B88C9AE14AEBDA03E93CA6DA4B53DF2D1D7FE870&dn=What+Women+Want+%282000%29+%281080p+BluRay+x265+HEVC+10bit+AAC+5.1+afm72%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 }
             ]
@@ -76,6 +131,16 @@ const DATA = {
             items: [
                 {
                     id: "gb-1",
+                    title: "2160p HDR BluRay LowSeeds QxR",
+                    version: "(2160p BluRay x265 HEVC 10bit HDR AAC 7 1 Tigole) [QxR]",
+                    size: "17.97GB",
+                    seeders: 14,
+                    leechers: 5,
+                    magnets: [String.raw`magnet:?xt=urn:btih:D2CF1A2358B41D5DDC33BCC053CC2255E187BB69&dn=Green+Book+%282018%29+%282160p+BluRay+x265+HEVC+10bit+HDR+AAC+7.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                },
+                {
+                    id: "gb-2",
                     title: "1080p BluRay HighSeeds QxR",
                     version: "(1080p BluRay x265 HEVC 10bit AAC 7 1 Tigole) [QxR]",
                     size: "5.02GB",
@@ -84,16 +149,6 @@ const DATA = {
                     magnets: [String.raw`magnet:?xt=urn:btih:7C8CAD7782BD0C3E05359B7706C54E1A3F55D65A&dn=Green+Book+%282018%29+%281080p+BluRay+x265+HEVC+10bit+AAC+7.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 },
-                {
-                    id: "gb-2",
-                    title: "2160p HDR BluRay LowSeeds QxR",
-                    version: "(2160p BluRay x265 HEVC 10bit HDR AAC 7 1 Tigole) [QxR]",
-                    size: "17.97GB",
-                    seeders: 14,
-                    leechers: 5,
-                    magnets: [String.raw`magnet:?xt=urn:btih:D2CF1A2358B41D5DDC33BCC053CC2255E187BB69&dn=Green+Book+%282018%29+%282160p+BluRay+x265+HEVC+10bit+HDR+AAC+7.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
-                    torrents: null
-                }
             ]
         },
         {
@@ -125,47 +180,72 @@ const DATA = {
             name: "Until Dawn 2025",
             items: [
                 {
-                    id: "ud-1",
-                    title: "#2 BluRay HighSeeds Unknow-Encoder",
-                    version: "UHD BluRay 2160p HDR10p DV HEVC TrueHD Atmos 7.1 x265-E",
-                    size: "23.4GB",
-                    seeders: 28,
-                    leechers: 19,
-                    magnets: [String.raw`magnet:?xt=urn:btih:EF6D479571FB0AAB9D4D85DF9AD6939C9B62B03E&dn=Until+Dawn+2025+UHD+BluRay+2160p+HDR10p+DV+HEVC+TrueHD+Atmos+7.1+x265-E&tr=udp%3A%2F%2Fopentracker.io%3A6969%2Fannoun%E2%80%8Bce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tryhackx.org%3A6969%2F%E2%80%8Bannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Ftracker.fnix.net%3A6969%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounc%E2%80%8Be&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta.me%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker1.520.jp%3A443%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
-                    torrents: null
-                },
-                {
                     id: "ud-2",
-                    title: "#1 BluRay High Quality LowSeeds BTM",
+                    title: "BluRay High Quality LowSeeds BTM",
                     version: "UHD.BluRay.DV.HDR.ENG.LATINO.FRE.ITA.POL.TrueHD.Atmos.7.1.H265-BEN.THE.MEN",
                     size: "32.12GB",
-                    seeders: 9,
+                    seeders: 10,
                     leechers: 3,
                     magnets: [String.raw`magnet:?xt=urn:btih:39ba0c12701f89255fc017791bb492c5646dc1b2&dn=Until.Dawn.2025.UHD.BluRay.DV.HDR.ENG.LATINO.FRE.ITA.POL.TrueHD.Atmos.7.1.H265-BEN.THE.MEN&xl=34493124447&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.torrent.eu.org:451/announce&tr=udp://open.stealth.si:80/announce&tr=udp://exodus.desync.com:6969/announce&tr=udp://explodie.org:6969/announce&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker-udp.gbitt.info:80/announce&tr=http://tracker.bt4g.com:2095/announce&tr=https://tracker.bjut.jp:443/announce&tr=udp://open.free-tracker.ga:6969/announce&tr=udp://tracker.opentrackr.org:1337&tr=udp://opentracker.io:6969/announce&tr=udp://tr4ck3r.duckdns.org:6969/announce&tr=http://bt.okmp3.ru:2710/announce&tr=http://tracker.vraphim.com:6969/announce`],
                     torrents: null
                 },
                 {
+                    id: "ud-1",
+                    title: "BluRay HighSeeds Unknow-Encoder",
+                    version: "UHD BluRay 2160p HDR10p DV HEVC TrueHD Atmos 7.1 x265-E",
+                    size: "23.4GB",
+                    seeders: 14,
+                    leechers: 12,
+                    magnets: [String.raw`magnet:?xt=urn:btih:EF6D479571FB0AAB9D4D85DF9AD6939C9B62B03E&dn=Until+Dawn+2025+UHD+BluRay+2160p+HDR10p+DV+HEVC+TrueHD+Atmos+7.1+x265-E&tr=udp%3A%2F%2Fopentracker.io%3A6969%2Fannoun%E2%80%8Bce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tryhackx.org%3A6969%2F%E2%80%8Bannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Ftracker.fnix.net%3A6969%2Fanno%E2%80%8Bunce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounc%E2%80%8Be&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta.me%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker1.520.jp%3A443%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                },
+                {
                     id: "ud-3",
-                    title: "#3 BluRay LowSeeds QxR",
+                    title: "BluRay LowSeeds QxR",
                     version: "(2160p BluRay x265 10bit DV HDR10+ TrueHD Atmos 7.1 English + French + German + Italian + Spanish + Thai r00t) [QxR]",
                     size: "16.8GB",
                     seeders: 9,
-                    leechers: 5,
+                    leechers: 7,
                     magnets: [String.raw`magnet:?xt=urn:btih:E1C7B44250B8EA07C200161FB66C2FDCB48EF229&dn=Until+Dawn+%282025%29+%281080p+BluRay+x265+10bit+TrueHD+Atmos+7.1+English+%2B+French+%2B+Spanish+%2B+Thai+r00t%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337%2Fannounce&tr=&tr=udp%3A%2F%2F9.rarbg.com%3A2810%2Fannounce&tr=&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 },
                 {
                     id: "ud-4",
-                    title: "#4 AOC but WebDL",
+                    title: "AOC but WebDL",
                     version: "Hybrid.2160p.WEB-DL.DV.HDR.DDP5.1.Atmos.H265-AOC",
                     size: "17.95GB",
-                    seeders: 10,
-                    leechers: 8,
+                    seeders: 13,
+                    leechers: 6,
                     magnets: [String.raw`magnet:?xt=urn:btih:D2D131219CB9E3098618F0DF81270B5752AC3AC2&dn=Until.Dawn.2025.Hybrid.2160p.WEB-DL.DV.HDR.DDP5.1.Atmos.H265-AOC&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.birkenwald.de%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
                     torrents: null
                 }
             ]
         }
+
+
+
+
+        /*
+        {
+            name: "Low Seed Downloaded",
+            items: [
+                {
+                    id: "mv-5",
+                    title: "An American Pickle 2020",
+                    version: "1080p WEB-DL H264 AC3-EVO[TGx] ",
+                    size: "5.3GB",
+                    seeders: 25,
+                    leechers: 1,
+                    magnets: [String.raw`magnet:?xt=urn:btih:F216D21A9642E08F641112CC69872D34AEA2D0C9&dn=An.American.Pickle.2020.1080p.WEB-DL.H264.AC3-EVO%5BTGx%5D+%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.iamhansen.xyz%3A2000%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce`],
+                    torrents: null
+                }
+            ]
+        }
+        */
+
+
+
+
         /*,{
             name: "Breaking Bad",
             items: [
